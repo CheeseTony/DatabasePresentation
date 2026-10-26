@@ -38,7 +38,7 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* ================= ФОН ================= */
+        /*фон*/
         .ambient-bg {
             position: fixed;
             inset: 0;
@@ -92,7 +92,7 @@
             100% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.2); }
         }
 
-        /* ================= КОНТЕЙНЕР ================= */
+        /*контейнер*/
         #app {
             position: absolute;
             width: 1920px;
@@ -122,7 +122,7 @@
             transform: scale(1) translateY(0);
         }
 
-        /* Анимации появления */
+        /*анимации появления*/
         .anim-up {
             opacity: 0;
             transform: translateY(40px);
@@ -140,7 +140,7 @@
         .d-4 { transition-delay: 0.4s; }
         .d-5 { transition-delay: 0.5s; }
 
-        /* ================= ТИПОГРАФИКА И УТИЛИТЫ ================= */
+        /*типографика и утилиты*/
         .brand-logo { margin-bottom: 50px; }
         .brand-logo img { height: 40px; }
 
@@ -187,7 +187,7 @@
             text-shadow: 0 0 30px rgba(255, 230, 0, 0.3);
         }
 
-        /* ================= КОМПОНЕНТЫ ================= */
+        /*компоненты*/
         .flex-row { display: flex; gap: 60px; align-items: center; }
         .w-50 { width: 50%; }
 
@@ -252,7 +252,7 @@
             color: rgba(255,255,255,0.9);
         }
 
-        /* Обычная картинка с подложкой */
+        /*обычная картинка с подложкой*/
         .slide-img {
             width: 100%;
             height: auto;
@@ -265,7 +265,7 @@
             display: block;
         }
 
-        /* Модификатор для картинок БЕЗ подложки и рамки */
+        /*модификатор для картинок БЕЗ подложки и рамки*/
         .img-clean {
             background: transparent !important;
             border: none !important;
@@ -273,7 +273,7 @@
             border-radius: 0 !important;
         }
 
-        /* Обертка для центрирования картинки */
+        /*обертка для центрирования картинки*/
         .img-wrapper {
             display: flex;
             justify-content: center;
@@ -282,14 +282,14 @@
             height: 100%;
         }
 
-        /* Компромиссный размер картинки (не большой, но и не маленький) */
+        /*размер картинок-иллюстраций*/
         .img-smaller {
             width: 100% !important;        
             max-height: 600px !important;  
             object-fit: contain !important; 
         }
 
-        /* Архитектурные схемы */
+        /*архитектурные схемы*/
         .arch-layer { display: flex; gap: 20px; margin-bottom: 20px; align-items: center; }
         .arch-box {
             background: rgba(255, 255, 255, 0.05);
@@ -306,7 +306,7 @@
         .arch-icons { display: flex; gap: 15px; }
         .arch-icons img { height: 40px; width: auto; }
 
-        /* Стили для слайда с Кипарисом */
+        /*стили для слайда с Кипарисом*/
         .metainfo-wrapper {
             display: flex;
             flex-direction: column;
@@ -335,7 +335,7 @@
             text-transform: uppercase;
         }
 
-        /* Блок с сердцем */
+        /*блок с сердцем*/
         .heart-wrapper {
             display: flex;
             flex-direction: column;
@@ -374,7 +374,7 @@
             max-width: 80%;
         }
 
-        /* Видео */
+        /*видео*/
         .video-slide { padding: 0; background: #000; }
         .video-container { position: absolute; inset: 0; width: 100%; height: 100%; }
         .video-container video { width: 100%; height: 100%; object-fit: cover; }
@@ -385,7 +385,7 @@
             pointer-events: none;
         }
 
-        /* ================= НАВИГАЦИЯ ================= */
+        /*навигация*/
         .nav-dots {
             position: absolute;
             bottom: 50px;
@@ -425,7 +425,7 @@
 
         .nav-dot.active { background: var(--yandex-neon); box-shadow: 0 0 10px var(--yandex-neon); }
 
-        /* ================= ДОСТУПНОСТЬ ================= */
+        /*доступность*/
         @media (prefers-reduced-motion: reduce) {
             .data-grid, .glow-blob { animation: none !important; }
             .slide, .anim-up { transition: none !important; }
@@ -442,7 +442,7 @@
 
     <div id="app">
         
-        <!-- 1. ТИТУЛ -->
+        <!--1. титул-->
         <section class="slide active">
             <div class="brand-logo anim-up d-1">
                 <img src="infra-logo.png" alt="Инфрастракча">
@@ -462,7 +462,7 @@
             </p>
         </section>
 
-        <!-- 2. ПРОБЛЕМА -->
+        <!--2. проблема-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">
                 Почему <span class="neon-text">SQL</span> ломается?
@@ -476,7 +476,7 @@
             </div>
         </section>
 
-        <!-- 3. АТАКА БПЛА -->
+        <!--3. атака БПЛА-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Проверка на прочность: <span class="neon-text">Атаки БПЛА</span></h2>
             <div class="flex-row">
@@ -495,7 +495,7 @@
             </div>
         </section>
 
-        <!-- 4. КТО СТОИТ ЗА YT -->
+        <!--4. кто стоит за YT-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">
                 Кто стоит за <span class="neon-text">YTsaurus</span>?
@@ -518,7 +518,7 @@
             </div>
         </section>
 
-        <!-- 5. ВИДЕО -->
+        <!--5. видео-->
         <section class="slide video-slide">
             <div class="video-container">
                 <video id="promo-video" playsinline preload="metadata">
@@ -528,7 +528,7 @@
             </div>
         </section>
 
-        <!-- 6. ЦИФРЫ -->
+        <!--6. цифры-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">YTsaurus в цифрах</h2>
             <div class="stat-grid">
@@ -550,7 +550,7 @@
             </div>
         </section>
 
-        <!-- 7. ЧТО ТАКОЕ YT -->
+        <!--7. что такое YT-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Операционная система для данных</h2>
             <div class="flex-row">
@@ -569,7 +569,7 @@
             </div>
         </section>
 
-        <!-- 8. АРХИТЕКТУРА: КИПАРИС -->
+        <!--8. архитектура: кипарис-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Слой хранения: <span class="neon-text">Кипарис</span></h2>
             <div class="flex-row">
@@ -589,7 +589,7 @@
             </div>
         </section>
 
-        <!-- 9. АРХИТЕКТУРА: ВЫЧИСЛЕНИЯ -->
+        <!--9. архитектура: вычисления-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Слой вычислений: <span class="neon-text">Движки</span></h2>
             <p class="text-body anim-up d-2 mb-40">
@@ -603,7 +603,7 @@
             </div>
         </section>
 
-        <!-- 10. OPEN SOURCE -->
+        <!--10. open source-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Яндекс <span class="neon-text">делится</span> технологиями</h2>
             <div class="info-card anim-up d-2 max-w-1200">
@@ -615,7 +615,7 @@
             </div>
         </section>
 
-        <!-- 11. КЕЙС: МУЗЫКА -->
+        <!--11. кейс: музыка-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Кейс 1: <span class="neon-text">Моя волна</span></h2>
             <div class="flex-row">
@@ -634,7 +634,7 @@
             </div>
         </section>
 
-        <!-- 12. КЕЙС: РОВЕРЫ -->
+        <!--12. кейс: роверы-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Кейс 2: <span class="neon-text">Роверы</span></h2>
             <div class="flex-row">
@@ -653,7 +653,7 @@
             </div>
         </section>
 
-        <!-- 13. КЕЙС: ДАТАСЕТЫ -->
+        <!--13. кейс: датасеты-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Кейс 3: <span class="neon-text">Датасеты</span></h2>
             <div class="info-card anim-up d-2 max-w-1200">
@@ -665,7 +665,7 @@
             </div>
         </section>
 
-        <!-- 14. ИТОГИ -->
+        <!--14. итоги-->
         <section class="slide">
             <h2 class="title-large anim-up d-1">Резюме</h2>
             <div class="stat-grid stat-grid--2">
@@ -688,7 +688,7 @@
             </div>
         </section>
 
-        <!-- 15. ФИНАЛ -->
+        <!--15. финальный слайд-->
         <section class="slide">
             <div class="brand-logo anim-up d-1">
                 <img src="infra-logo.png" alt="Инфрастракча">
@@ -703,7 +703,7 @@
 
     </div>
 
-    <!-- Навигация -->
+    <!--навигация-->
     <div class="nav-dots" role="tablist" aria-label="Навигация по слайдам"></div>
 
     <script>
@@ -713,9 +713,12 @@
         const video = document.getElementById('promo-video');
         const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-        /* Индексы ключевых слайдов */
+        //индексы ключевых слайдов
         const VIDEO_SLIDE_INDEX = 4;   
         const NUMBERS_SLIDE_INDEX = 5; 
+
+        //отслеживаем зажатую клавишу L для перемотки
+        let isLPressed = false;
 
         function resize() {
             const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
@@ -838,7 +841,47 @@
         }
         goTo(getInitialIndex(), { updateHash: false, focusSlide: false });
 
+        //отслеживаем нажатие L (для перемотки)
+        document.addEventListener('keyup', (e) => {
+            if (e.code === 'KeyL') {
+                isLPressed = false;
+            }
+        });
+
         document.addEventListener('keydown', (e) => {
+            if (e.code === 'KeyL') {
+                isLPressed = true;
+            }
+
+            //специальные команды для видео (работают только на слайде с видео)
+            if (current === VIDEO_SLIDE_INDEX) {
+                //пауза/воспроизведение (Ctrl + Shift + P)
+                if (e.ctrlKey && e.shiftKey && e.code === 'KeyP') {
+                    e.preventDefault();
+                    if (video.paused) {
+                        video.play().catch(() => {});
+                    } else {
+                        video.pause();
+                    }
+                    return;
+                }
+
+                //перемотка (L + Стрелка вправо/влево или Shift + Стрелка)
+                if ((isLPressed || e.shiftKey) && e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    video.currentTime = Math.min(video.currentTime + 1, video.duration);
+                    return;
+                }
+                if ((isLPressed || e.shiftKey) && e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    video.currentTime = Math.max(video.currentTime - 1, 0);
+                    return;
+                }
+            }
+
+            //стандартная навигация по слайдам
             switch (e.key) {
                 case 'ArrowRight':
                 case 'ArrowDown':
